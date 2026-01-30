@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|d:\\unity\\interactionsystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,8 +18,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,18 +36,10 @@
               "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
               "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwCwAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T17:28:06.261Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InputManager.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAqwDQAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T17:28:04.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T17:28:04.72Z"
             }
           ]
         },
