@@ -62,6 +62,8 @@ namespace FPSGame.Runtime
             m_InputActions.Player.Sprint.performed += ctx => IsSprintPressed = true;
             m_InputActions.Player.Sprint.canceled += ctx => IsSprintPressed = false;
 
+            m_InputActions.Player.Interact.started += ctx => InteractTriggered = true;
+            m_InputActions.Player.Interact.canceled += ctx => InteractTriggered = false;
         }
 
         private void OnEnable()
@@ -77,7 +79,10 @@ namespace FPSGame.Runtime
         #endregion
 
         #region Methods
-
+        public void ConsumeInteract()
+        {
+            InteractTriggered = false;
+        }
 
         #endregion
     }
