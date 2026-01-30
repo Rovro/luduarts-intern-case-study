@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "D:\\Unity\\InteractionSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|d:\\unity\\interactionsystem\\assets\\luduarts_intern_case\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scriptableobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scriptableobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|d:\\unity\\interactionsystem\\assets\\luduarts_intern_case\\scripts\\runtime\\ui\\inventoryitemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\ui\\inventoryitemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|d:\\unity\\interactionsystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\interactables\\pickableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\interactables\\pickableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\helpers\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\helpers\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scriptableobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scriptableobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|D:\\Unity\\InteractionSystem\\assets\\luduarts_intern_case\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luduarts_intern_case\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,16 +66,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "InventoryItemUI.cs",
+              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryItemUI.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryItemUI.cs",
+              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryItemUI.cs",
+              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryItemUI.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAQwFAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T22:35:20.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwJ8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:51:27.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "Stub",
+              "ToolTip": "Stub",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:51:26.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Helpers\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Helpers\\InventorySlot.cs",
+              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Helpers\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Helpers\\InventorySlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVDhPY2AYBQwMDAwMN17c\u002BO\u002B1yv2/4ETe/9aLLf7feHH9P7L8vHNz4XxkNhxYLzb/33yo4T8DAwND06GG/16r3FEUCU7khfOR2QwMDAyMMMH3\u002BZ8ZYYK6czX/X06\u002Bzjjv3Nz/xYcLkNXDgausO8OqoDUQPeimogN8LmBC5pADsBqgO1fzPwM0wGA2Ck7kRWGHrQtBuMRzlfv/5sONkEA83PjferEF0YHIwACNRqtF5v8FJ/L\u002B91zpRno0jnAAAA95Yu0ct6ifAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-01-30T21:51:26.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InteractionDetector.cs",
+              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAABAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVDhPY2AYBQwMDAwMN17c\u002BO\u002B1yv2/4ETe/9aLLf7feHH9P7L8vHNz4XxkNhxYLzb/33yo4T8DAwND06GG/16r3FEUCU7khfOR2QwMDAyMMMH3\u002BZ8ZYYK6czX/X06\u002Bzjjv3Nz/xYcLkNXDgausO8OqoDUQPeimogN8LmBC5pADsBqgO1fzPwM0wGA2Ck7kRWGHrQtBuMRzlfv/5sONkEA83PjferEF0YHIwACNRqtF5v8FJ/L\u002B91zpRno0jnAAAA95Yu0ct6ifAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-01-30T21:51:26.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "Stub",
+              "ToolTip": "Stub",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVDhPY2AYBQwMDAwMN17c\u002BO\u002B1yv2/4ETe/9aLLf7feHH9P7L8vHNz4XxkNhxYLzb/33yo4T8DAwND06GG/16r3FEUCU7khfOR2QwMDAyMMMH3\u002BZ8ZYYK6czX/X06\u002Bzjjv3Nz/xYcLkNXDgausO8OqoDUQPeimogN8LmBC5pADsBqgO1fzPwM0wGA2Ck7kRWGHrQtBuMRzlfv/5sONkEA83PjferEF0YHIwACNRqtF5v8FJ/L\u002B91zpRno0jnAAAA95Yu0ct6ifAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-01-30T21:51:26.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InteractionUI.cs",
               "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InteractionUI.cs",
               "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InteractionUI.cs",
               "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InteractionUI.cs",
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\UI\\InteractionUI.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T21:51:26.645Z"
             },
             {
               "$type": "Document",
@@ -69,38 +153,13 @@
               "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Interactables\\PickableItem.cs",
               "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Interactables\\PickableItem.cs",
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Interactables\\PickableItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.23Z"
+              "WhenOpened": "2026-01-30T21:51:26.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ItemData.cs",
-              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\ScriptableObjects\\ItemData.cs",
-              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\ScriptableObjects\\ItemData.cs",
-              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\ScriptableObjects\\ItemData.cs",
-              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\ScriptableObjects\\ItemData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InteractionDetector.cs",
-              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
-              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
-              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAxwDQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "IInteractable.cs",
               "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Core\\IInteractable.cs",
               "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Core\\IInteractable.cs",
@@ -108,31 +167,32 @@
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Core\\IInteractable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.236Z"
+              "WhenOpened": "2026-01-30T21:51:26.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "FirstPersonController.cs",
               "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
               "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
               "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
               "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\FirstPersonController.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAzwEUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAQwGYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.237Z"
+              "WhenOpened": "2026-01-30T21:51:26.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InputManager.cs",
-              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InputManager.cs",
-              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InputManager.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAqwCMAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InventoryController.cs",
+              "ToolTip": "D:\\Unity\\InteractionSystem\\Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InventoryController.cs",
+              "RelativeToolTip": "Assets\\LuduArts_Intern_Case\\Scripts\\Runtime\\Player\\InventoryController.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwMsAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T20:45:43.238Z"
+              "WhenOpened": "2026-01-30T21:50:34.61Z"
             }
           ]
         },

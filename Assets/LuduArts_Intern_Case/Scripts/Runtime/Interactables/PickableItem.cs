@@ -3,10 +3,6 @@ using FPSGame.Runtime.Inventory;
 
 namespace FPSGame.Runtime.Interaction.Interactables
 {
-    /// <summary>
-    /// Yerden toplanabilen eþyalar için etkileþim sýnýfý.
-    /// Þimdilik sadece Prompt verisini saðlar, toplama iþlemi devre dýþýdýr.
-    /// </summary>
     public class PickableItem : MonoBehaviour, IInteractable
     {
         #region Fields
@@ -26,7 +22,20 @@ namespace FPSGame.Runtime.Interaction.Interactables
 
         public bool OnInteract(GameObject interactor)
         {
-            return true;
+            if (m_ItemData == null) return false;
+
+            var inventory = interactor.GetComponent<InventoryController>();
+            if (inventory == null) return false;
+
+            // Kendimizi (gameObject) de gönderiyoruz
+            // Destroy KULLANMIYORUZ. InventoryController yönetecek.
+            if (inventory.AddItem(m_ItemData, gameObject))
+            {
+                Debug.Log($"Collected: {m_ItemData.ItemName}");
+                return true;
+            }
+
+            return false;
         }
 
         #endregion

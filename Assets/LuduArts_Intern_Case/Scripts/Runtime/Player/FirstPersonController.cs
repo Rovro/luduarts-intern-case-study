@@ -13,7 +13,6 @@ namespace FPSGame.Runtime
     {
         #region Fields
 
-        // Serialized private instance fields
         [Header("Movement")]
         [SerializeField] private float m_WalkSpeed = 5f;
         [SerializeField] private float m_SprintSpeed = 8f;
@@ -27,7 +26,6 @@ namespace FPSGame.Runtime
         [SerializeField] private float m_TopClamp = 85f;
         [SerializeField] private float m_BottomClamp = -85f;
 
-        // Non-serialized private instance fields
         private CharacterController m_Controller;
         private InputManager m_InputManager;
         private Camera m_PlayerCamera;
@@ -54,9 +52,6 @@ namespace FPSGame.Runtime
 
         #region Methods
 
-        /// <summary>
-        /// Gerekli componentleri çeker ve cursor ayarlarýný yapar.
-        /// </summary>
         private void InitializeComponents()
         {
             m_Controller = GetComponent<CharacterController>();
@@ -64,7 +59,7 @@ namespace FPSGame.Runtime
 
             if (m_CameraRoot == null)
             {
-                Debug.LogError($"[FirstPersonController] CameraRoot is not assigned in {name}! Please create an empty child object for eyes.");
+                Debug.LogError($"[FirstPersonController] CameraRoot is not assigned in {name}!");
                 enabled = false;
                 return;
             }
@@ -73,9 +68,6 @@ namespace FPSGame.Runtime
             Cursor.visible = false;
         }
 
-        /// <summary>
-        /// Sahnedeki Main Camera'yý bulup CameraRoot altýna taþýr.
-        /// </summary>
         private void InitializeCamera()
         {
             m_PlayerCamera = Camera.main;
@@ -87,16 +79,15 @@ namespace FPSGame.Runtime
             }
 
             m_PlayerCamera.transform.SetParent(m_CameraRoot);
-
             m_PlayerCamera.transform.localPosition = Vector3.zero;
             m_PlayerCamera.transform.localRotation = Quaternion.identity;
         }
 
-        /// <summary>
-        /// Kamera bakýþ açýsýný (Pitch) ve gövde dönüþünü (Yaw) yönetir.
-        /// </summary>
         private void HandleCameraRotation()
         {
+            // EKLEME: Eðer cursor kilitli deðilse (yani envanter açýksa), kamera dönmesin.
+            if (Cursor.lockState != CursorLockMode.Locked) return;
+
             if (m_InputManager.LookInput.sqrMagnitude < 0.001f) return;
 
             float mouseX = m_InputManager.LookInput.x * m_MouseSensitivity;
@@ -109,9 +100,6 @@ namespace FPSGame.Runtime
             transform.Rotate(Vector3.up * mouseX);
         }
 
-        /// <summary>
-        /// Karakterin yürüme, koþma ve zýplama fiziðini yönetir.
-        /// </summary>
         private void HandleMovement()
         {
             bool isGrounded = m_Controller.isGrounded;
