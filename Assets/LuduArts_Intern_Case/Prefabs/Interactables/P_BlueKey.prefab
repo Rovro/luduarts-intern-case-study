@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6005608026305046083}
   - component: {fileID: 456352025912779424}
   - component: {fileID: 9214372446647791850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6701401948110373690}
   - component: {fileID: 6083118935602311480}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6529509893369826028}
-  m_Layer: 0
+  - component: {fileID: -4734800212476573312}
+  m_Layer: 3
   m_Name: P_BlueKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,3 +173,16 @@ Transform:
   - {fileID: 6701401948110373690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4734800212476573312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795357813572857301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c3d49ea75ad6b4f8567a25667aeffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ItemData: {fileID: 11400000, guid: 51171711c31f74441846ae42de4b6603, type: 2}

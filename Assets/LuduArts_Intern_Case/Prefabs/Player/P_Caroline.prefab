@@ -18269,6 +18269,7 @@ GameObject:
   - component: {fileID: 325693081578127634}
   - component: {fileID: 6494064856824726032}
   - component: {fileID: 2849238482607742591}
+  - component: {fileID: -3428861911590403260}
   m_Layer: 0
   m_Name: P_Caroline
   m_TagString: Untagged
@@ -18373,6 +18374,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3428861911590403260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105831083137662637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42bb7aa2d125c4a4a917d67f3894ad94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionRange: 3
+  m_InteractionLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  m_ShowDebugGizmos: 1
 --- !u!1 &9117696222331447033
 GameObject:
   m_ObjectHideFlags: 0
