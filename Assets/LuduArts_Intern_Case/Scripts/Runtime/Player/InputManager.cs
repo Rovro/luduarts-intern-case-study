@@ -42,6 +42,11 @@ namespace FPSGame.Runtime
         /// </summary>
         public bool InteractTriggered { get; private set; }
 
+        /// <summary>
+        /// Inventory tuþu tetiklendi mi?
+        /// </summary>
+        public bool InventoryTriggered { get; private set; }
+
         #endregion
 
         #region Unity Methods
@@ -64,6 +69,9 @@ namespace FPSGame.Runtime
 
             m_InputActions.Player.Interact.started += ctx => InteractTriggered = true;
             m_InputActions.Player.Interact.canceled += ctx => InteractTriggered = false;
+
+            m_InputActions.Player.Inventory.started += ctx => InventoryTriggered = true;
+            m_InputActions.Player.Inventory.canceled += ctx => InventoryTriggered = false;
         }
 
         private void OnEnable()
@@ -82,6 +90,10 @@ namespace FPSGame.Runtime
         public void ConsumeInteract()
         {
             InteractTriggered = false;
+        }
+        public void ConsumeInventoryInput()
+        {
+            InventoryTriggered = false;
         }
 
         #endregion
