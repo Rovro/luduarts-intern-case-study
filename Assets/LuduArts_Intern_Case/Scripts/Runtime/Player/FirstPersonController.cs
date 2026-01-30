@@ -5,6 +5,7 @@ namespace FPSGame.Runtime
 {
     /// <summary>
     /// Karakterin fiziksel hareketlerini ve kamera kontrollerini yöneten sýnýf.
+    /// Kamera yönetimini "Runtime Re-parenting" yöntemiyle ele alýr.
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(InputManager))]
@@ -19,7 +20,8 @@ namespace FPSGame.Runtime
         [SerializeField] private float m_JumpHeight = 1.2f;
         [SerializeField] private float m_Gravity = -15.0f;
 
-        [Header("Camera")]
+        [Header("Camera Settings")]
+        [Tooltip("Kameranýn oturacaðý göz hizasý objesi.")]
         [SerializeField] private Transform m_CameraRoot;
         [SerializeField] private float m_MouseSensitivity = 1f;
         [SerializeField] private float m_TopClamp = 85f;
@@ -28,6 +30,7 @@ namespace FPSGame.Runtime
         // Non-serialized private instance fields
         private CharacterController m_Controller;
         private InputManager m_InputManager;
+        private Camera m_PlayerCamera;
         private float m_VerticalVelocity;
         private float m_CameraPitch;
 
@@ -37,12 +40,31 @@ namespace FPSGame.Runtime
 
         private void Awake()
         {
+            InitializeComponents();
+            InitializeCamera();
+        }
+
+        private void Update()
+        {
+            HandleCameraRotation();
+            HandleMovement();
+        }
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Gerekli componentleri çeker ve cursor ayarlarýný yapar.
+        /// </summary>
+        private void InitializeComponents()
+        {
             m_Controller = GetComponent<CharacterController>();
             m_InputManager = GetComponent<InputManager>();
 
             if (m_CameraRoot == null)
             {
-                Debug.LogError($"CameraRoot is not assigned in {name}!");
+                Debug.LogError($"[FirstPersonController] CameraRoot is not assigned in {name}! Please create an empty child object for eyes.");
                 enabled = false;
                 return;
             }
@@ -51,17 +73,29 @@ namespace FPSGame.Runtime
             Cursor.visible = false;
         }
 
-        private void Update()
+        /// <summary>
+        /// Sahnedeki Main Camera'yý bulup CameraRoot altýna taþýr.
+        /// </summary>
+        private void InitializeCamera()
         {
-            HandleCamera();
-            HandleMovement();
+            m_PlayerCamera = Camera.main;
+
+            if (m_PlayerCamera == null)
+            {
+                Debug.LogError("[FirstPersonController] No MainCamera found in the scene via Camera.main!");
+                return;
+            }
+
+            m_PlayerCamera.transform.SetParent(m_CameraRoot);
+
+            m_PlayerCamera.transform.localPosition = Vector3.zero;
+            m_PlayerCamera.transform.localRotation = Quaternion.identity;
         }
 
-        #endregion
-
-        #region Methods
-
-        private void HandleCamera()
+        /// <summary>
+        /// Kamera bakýþ açýsýný (Pitch) ve gövde dönüþünü (Yaw) yönetir.
+        /// </summary>
+        private void HandleCameraRotation()
         {
             if (m_InputManager.LookInput.sqrMagnitude < 0.001f) return;
 
@@ -75,6 +109,9 @@ namespace FPSGame.Runtime
             transform.Rotate(Vector3.up * mouseX);
         }
 
+        /// <summary>
+        /// Karakterin yürüme, koþma ve zýplama fiziðini yönetir.
+        /// </summary>
         private void HandleMovement()
         {
             bool isGrounded = m_Controller.isGrounded;
