@@ -118,6 +118,7 @@ namespace FPSGame.Runtime.Interaction
 
         private void HandleInteractionInput()
         {
+            if (Cursor.lockState != CursorLockMode.Locked) return;
             if (m_InputManager.InteractTriggered && m_CurrentInteractable != null)
             {
                 m_CurrentInteractable.OnInteract(gameObject);
