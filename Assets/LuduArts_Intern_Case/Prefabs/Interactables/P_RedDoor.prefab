@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8080019895782542389}
   - component: {fileID: 9032910718613504322}
   - component: {fileID: 5900481205388460745}
+  - component: {fileID: 4491234097512678615}
   m_Layer: 3
   m_Name: P_RedDoor
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   m_IsLocked: 1
   m_LockConditions:
   - {fileID: 5900481205388460745}
+  - {fileID: 4491234097512678615}
 --- !u!114 &5900481205388460745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +67,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RequiredKey: {fileID: 11400000, guid: 4d97cbb07c37ffc4c849dba5698d21b9, type: 2}
+  m_ConsumeKey: 1
+--- !u!114 &4491234097512678615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459016557073580241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb8401c9d8a1e4488ff3654a54c9766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RequiredKey: {fileID: 11400000, guid: b020a77cb98fd284d93925ccb644a103, type: 2}
   m_ConsumeKey: 1
 --- !u!1 &5526795253998623493
 GameObject:
