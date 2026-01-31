@@ -186,7 +186,7 @@ namespace FPSGame.Runtime.Inventory
         /// </summary>
         private void UpdateVisuals()
         {
-            // Önce eldekini depoya geri gönder (varsa)
+            // 1. Önce eldekini depoya geri gönder/temizle (her durumda yapýlmalý)
             if (m_CurrentVisualObject != null)
             {
                 m_CurrentVisualObject.transform.SetParent(m_InventoryContainer);
@@ -195,22 +195,35 @@ namespace FPSGame.Runtime.Inventory
                 m_CurrentVisualObject = null;
             }
 
-            // Yeni seçimi getir
+            // CRASH FIX: Eðer envanter boþaldýysa veya index sýnýr dýþýysa iþlem yapma
+            if (m_Slots.Count == 0)
+            {
+                return;
+            }
+
+            // Ekstra güvenlik: Index sýnýr dýþýysa sýfýrla
+            if (m_SelectedSlotIndex >= m_Slots.Count)
+            {
+                m_SelectedSlotIndex = 0;
+            }
+
+            // 2. Yeni seçimi getir
             var currentSlot = m_Slots[m_SelectedSlotIndex];
+
             if (currentSlot.PhysicalObjects.Count > 0)
             {
                 // Slotun içindeki ilk objeyi görsel olarak kullanýyoruz
-                // (Stackteki diðerleri depoda gizli kalýyor)
                 GameObject objToShow = currentSlot.PhysicalObjects[0];
 
-                objToShow.transform.SetParent(m_CurrentObjectHandle);
+                if (objToShow != null)
+                {
+                    objToShow.transform.SetParent(m_CurrentObjectHandle);
+                    objToShow.transform.localPosition = Vector3.zero;
+                    objToShow.transform.localRotation = Quaternion.identity;
+                    objToShow.SetActive(true);
 
-                // Pozisyonu sýfýrla (Handle'ýn tam ortasýna otursun)
-                objToShow.transform.localPosition = Vector3.zero;
-                objToShow.transform.localRotation = Quaternion.identity;
-                objToShow.SetActive(true);
-
-                m_CurrentVisualObject = objToShow;
+                    m_CurrentVisualObject = objToShow;
+                }
             }
         }
 
@@ -218,7 +231,59 @@ namespace FPSGame.Runtime.Inventory
         {
             OnInventoryChanged?.Invoke(m_Slots);
         }
+        public bool HasItem(string itemID)
+        {
+            foreach (var slot in m_Slots)
+            {
+                if (slot.Data.ID == itemID) return true;
+            }
+            return false;
+        }
 
+        public bool RemoveItem(string itemID)
+        {
+            for (int i = 0; i < m_Slots.Count; i++)
+            {
+                var slot = m_Slots[i];
+                if (slot.Data.ID == itemID)
+                {
+                    // Stackten bir tane düþ, fiziksel objeyi yok et/kaldýr
+                    if (slot.PhysicalObjects.Count > 0)
+                    {
+                        var objToRemove = slot.PhysicalObjects[slot.PhysicalObjects.Count - 1];
+                        slot.PhysicalObjects.RemoveAt(slot.PhysicalObjects.Count - 1);
+                        Destroy(objToRemove);
+                    }
+
+                    slot.StackSize--;
+
+                    // Eðer stack bittiyse slotu tamamen sil
+                    if (slot.StackSize <= 0)
+                    {
+                        // Eðer silinen slot þu an elimizde tuttuðumuzsa, görsel referansý hemen kopar
+                        if (m_SelectedSlotIndex == i && m_CurrentVisualObject != null)
+                        {
+                            m_CurrentVisualObject = null; // UpdateVisuals temizleyecek ama referansý null yapalým
+                        }
+
+                        m_Slots.RemoveAt(i);
+
+                        // Index Ayarlamasý:
+                        // Liste boþaldýysa index 0 kalabilir (UpdateVisuals'da check var).
+                        // Liste boþalmadýysa ama son elemaný sildiysek, indexi bir geri çek.
+                        if (m_SelectedSlotIndex >= m_Slots.Count)
+                        {
+                            m_SelectedSlotIndex = Mathf.Max(0, m_Slots.Count - 1);
+                        }
+                    }
+
+                    UpdateVisuals(); // Artýk güvenli
+                    NotifyChanges();
+                    return true;
+                }
+            }
+            return false;
+        }
         #endregion
     }
 }
