@@ -129,18 +129,18 @@ git clone https://github.com/Rovro/luduarts-intern-case-study.git
   - [x] / [X] InteractionDetector
   - [x] / [X] Range kontrolü
 
-- [x] / [X] Interaction Types
+- [x] / [] Interaction Types
   - [x] / [X] Instant
   - [x] / [ ] Hold
   - [x] / [ ] Toggle
 
-- [x] / [X] Interactable Objects
+- [x] / [] Interactable Objects
   - [x] / [X] Door (locked/unlocked)
   - [x] / [X] Key Pickup
   - [x] / [X] Switch/Lever
   - [x] / [ ] Chest/Container
 
-- [x] / [X] UI Feedback
+- [x] / [] UI Feedback
   - [x] / [X] Interaction prompt
   - [x] / [X] Dynamic text
   - [x] / [ ] Hold progress bar
