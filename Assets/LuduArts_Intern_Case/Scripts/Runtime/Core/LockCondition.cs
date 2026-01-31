@@ -21,8 +21,15 @@ namespace FPSGame.Runtime.Interaction.Locks
         public abstract string DenialMessage { get; }
 
         /// <summary>
+        /// Kilit açýldýktan sonra bu koþul listeden silinsin mi?
+        /// (Anahtar için EVET, Þalter için HAYIR)
+        /// </summary>
+        public virtual bool ShouldRemoveAfterUnlock => false; // Varsayýlan: Hayýr
+
+        /// <summary>
         /// Koþul saðlandýðýnda (örn: anahtarý envanterden silmek için) yapýlacak iþlem.
         /// </summary>
         public virtual void OnUnlock(GameObject interactor) { }
+
     }
 }
