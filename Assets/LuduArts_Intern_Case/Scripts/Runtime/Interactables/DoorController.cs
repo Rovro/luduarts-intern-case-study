@@ -67,22 +67,31 @@ namespace FPSGame.Runtime.Interaction.Interactables
 
         public bool OnInteract(GameObject interactor)
         {
+            // Kapý açýksa kapat (Kilit durumuna bakma)
             if (m_IsOpen)
             {
                 CloseDoor();
                 return true;
             }
 
+            // Kapalýysa ve Kilitliyse (Switch hala listede olduðu için Locked dönecek)
             if (m_IsLocked)
             {
+                // Tekrar kontrol et! Switch hala açýk mý?
                 if (CheckLocks(interactor))
                 {
+                    // Þalter açýk, kapýyý açabiliriz
                     UnlockAndOpen(interactor);
                     return true;
                 }
-                return false;
+                else
+                {
+                    // Þalter kapalý, açma
+                    return false;
+                }
             }
 
+            // Hiç kilit yoksa direkt aç
             OpenDoor();
             return true;
         }
@@ -102,11 +111,35 @@ namespace FPSGame.Runtime.Interaction.Interactables
 
         private void UnlockAndOpen(GameObject interactor)
         {
-            m_IsLocked = false;
-            foreach (var condition in m_LockConditions)
+            // Listeyi tersten dönüyoruz çünkü eleman silebiliriz
+            for (int i = m_LockConditions.Count - 1; i >= 0; i--)
             {
+                var condition = m_LockConditions[i];
+
+                // Koþulun açýlma olayýný tetikle (Örn: Anahtarý sil)
                 condition.OnUnlock(interactor);
+
+                // Eðer bu kalýcý bir kilit deðilse (Örn: Anahtar), listeden at.
+                // Ama þalter (Switch) ise listede kalsýn.
+                if (condition.ShouldRemoveAfterUnlock)
+                {
+                    m_LockConditions.RemoveAt(i);
+                }
             }
+
+            // Eðer listede hiç koþul kalmadýysa, kapý artýk tamamen kilitsizdir.
+            // Ama listede hala Switch varsa, m_IsLocked TRUE kalmaya devam etmeli!
+            if (m_LockConditions.Count == 0)
+            {
+                m_IsLocked = false;
+            }
+            else
+            {
+                // Listede hala Switch var, yani kapý teknik olarak hala "Kilitli" statüsünde.
+                // Sadece þu anlýk koþullar saðlandýðý için açýlýyor.
+                m_IsLocked = true;
+            }
+
             OpenDoor();
         }
 

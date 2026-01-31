@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 5149180344918442600}
   - component: {fileID: 1063744795272336865}
   - component: {fileID: 3926947665364307069}
+  - component: {fileID: -642850261640625}
   m_Layer: 3
   m_Name: P_BlueDoor
   m_TagString: Untagged
@@ -207,6 +208,7 @@ MonoBehaviour:
   m_IsLocked: 1
   m_LockConditions:
   - {fileID: 3926947665364307069}
+  - {fileID: -642850261640625}
 --- !u!114 &3926947665364307069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +223,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RequiredKey: {fileID: 11400000, guid: 51171711c31f74441846ae42de4b6603, type: 2}
   m_ConsumeKey: 1
+--- !u!114 &-642850261640625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3259348325079915250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611da433ba45a8b4d801504603274180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RequiredSwitch: {fileID: 6477166568434774216, guid: 9e242de3fd04eec4fa124fc0c4baf1b8, type: 3}
+  m_FailureMessage: Need Switch Open
 --- !u!1 &4030996434505980904
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,8 @@ namespace FPSGame.Runtime.Interaction.Locks
             ? $"Requires {m_RequiredKey.ItemName}"
             : "Requires a specific key";
 
+        public override bool ShouldRemoveAfterUnlock => true;
+
         public override bool IsMet(GameObject interactor)
         {
             if (m_RequiredKey == null)
@@ -45,7 +47,7 @@ namespace FPSGame.Runtime.Interaction.Locks
 
         public override void OnUnlock(GameObject interactor)
         {
-            if (m_ConsumeKey)
+            if (m_ConsumeKey && m_RequiredKey != null)
             {
                 var inventory = interactor.GetComponent<InventoryController>();
                 if (inventory != null)
